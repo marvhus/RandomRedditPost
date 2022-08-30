@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Random Meme</title>
+		<meta name="viewport" content="width:device-width, initial-scale=1">
+		<meta http-equiv="refresh" content="120;url=http://127.0.0.1:5000/{{subreddit}}" />
+		<style>
+			body {
+				background-color: #000000;
+				background-repeat: no-repeat;
+				background-position: top left;
+				background-attachment: fixed;
+			}
+			h1 {
+				text-align: center;
+				font-family: Arial, sans-serif;
+				color: #ffffff;
+				background-color: #000000;
+			}
+			p {
+				text-align: center;
+				font-family: Georgia, serif;
+				font-size: 28px;
+				font-style: normal;
+				font-weight: normal;
+				color: #ffffff;
+				background-color: #0000000;
+			}
+			img {
+				height: 400px;
+			}
+			button {
+				border: 1px white solid;
+				color: #ffffff;
+				background-color: #000000;
+				border-radius: 15px;
+				padding: 25px 50px;
+				transition: ease 0.5s;
+			}
+			button:hover {
+				transform: scale(1.2);
+				background-color: #aaaaaa;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>A website to gather random redit posts!</h1>
+		<p>
+			<a href="{{link}}">{{title}}</a>
+			<br><br>
+			<img src="{{meme_pic}}">
+			<br><br>
+			Author: <a href="https;//www.redit.com/u/{{author}}">{{author}}</a>
+			<br>
+			Upvotes: {{ups}}
+			<br>
+			Current subreddit: <a href="https://www.reddit.com/r/{{subreddit}}">{{subreddit}}</a>
+			<br><br><br>
+			<a href="http://127.0.0.1:5000/{{subreddit}}"><button>Next</button></a>
+		</p>
+	</body>
+</html>
